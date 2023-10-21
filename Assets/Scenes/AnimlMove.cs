@@ -31,16 +31,13 @@ public class AnimlMove : MonoBehaviour
 
             worldPos =Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x,mousePos.y,10f));
 
-            StartCoroutine(_move());
+            StartCoroutine("move");
         }
     }
 
-    private void StartCoroutine(IEnumerable enumerable)
-    {
-        throw new NotImplementedException();
-    }
+   
 
-    IEnumerable _move()
+    IEnumerable move()
     {
         isMoving = true;
 
