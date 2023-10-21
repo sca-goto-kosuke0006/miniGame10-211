@@ -48,6 +48,7 @@ public class AnimlMove : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, worldPos, AnimalSpeed * Time.deltaTime);
             //1フレーム待つ
             yield return null;
+            Debug.Log("ugoku");
         }
         //移動フラグをfalse
         isMoving = false;
